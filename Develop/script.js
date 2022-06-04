@@ -76,4 +76,4 @@ generateBtn.addEventListener("click", writePassword);
 //             
 //        .__(.)< (MEOW)
 //         \___)   
-//  ~~~~~~~~~~~~~~~~~~ 
+//  ~~~~~~~~~~~~~~~~~~~
