@@ -1,3 +1,4 @@
+//characters object that stores different types of characters.
 var characters = {
   lowercase: 'abcdefghijklmnopqrstuvqxyz',
   uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -17,6 +18,7 @@ function writePassword() {
   } 
   var rawPassword = "";
   var passwordText = document.querySelector("#password");
+  //confirming that the user wants to use this type of character.
   var lowercaseConfirm = confirm("Do you want lowercase letters?");
   if (lowercaseConfirm) {
     rawPassword += characters.lowercase;
@@ -25,6 +27,7 @@ function writePassword() {
   else {
     alert("You did not select lowercase letters");
   }
+  //confirming that the user wants to use this type of character.
   var uppercaseConfirm = confirm("Do you want uppercase letters?");
   if (uppercaseConfirm) {
     rawPassword += characters.uppercase;
@@ -33,6 +36,7 @@ function writePassword() {
   else {
     alert("You did not select uppercase letters");
   }
+  //confirming that the user wants to use this type of character.
   var numericsConfirm = confirm("Do you want numerical characters?");
   if (numericsConfirm) {
     rawPassword += characters.numerics;
@@ -41,6 +45,7 @@ function writePassword() {
   else {
     alert("You did not select numerical characters");
   }
+  //confirming that the user wants to use this type of character.
   var specialConfirm = confirm("Do you want special characters?");
   if (specialConfirm) {
     rawPassword += characters.special;
@@ -56,6 +61,7 @@ function writePassword() {
 
   var password = "";
 
+  //randomly generate characters for the password.
   for (let i = 0; i < passwordLength; i++) {
   password += rawPassword[Math.floor(Math.random() * rawPassword.length)];
   }
